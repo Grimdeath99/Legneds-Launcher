@@ -8,7 +8,11 @@ It manages your Brawl ISO, launches Dolphin, and provides update and settings ma
 - First-time check for Brawl ISO (prompts user if not found)
 - Custom logo and background
 - Launch and update Dolphin
-- Settings window for build type and API configuration
+- **Automatic and manual update options**
+- **Update channel selection: Main (GitHub Releases) or Alpha (GitHub Master branch)**
+- **Update progress bar and restart after update**
+- **Settings window with update preferences (auto/manual, channel)**
+- **Modern UI using CustomTkinter (white background, black buttons)**
 
 ## Requirements
 
@@ -33,9 +37,16 @@ It manages your Brawl ISO, launches Dolphin, and provides update and settings ma
 
 ## Configuration
 
-- On first launch, you will be prompted to select your Brawl ISO.
-- The path is saved in `config.ini` for future launches.
-- Settings can be changed via the Settings button in the launcher.
+- On first launch, you will be prompted to select your Brawl ISO and choose update channel (Main/Alpha).
+- The path and settings are saved in `config.ini` for future launches.
+- Settings (including update mode and channel) can be changed via the Settings button in the launcher.
+
+## Update System
+
+- **Main build**: Uses GitHub Releases for updates.
+- **Alpha build**: Uses the latest commit from the GitHub master branch.
+- Checks for updates automatically (if enabled) or manually via the Update button.
+- Shows a progress bar during download and restarts after update.
 
 ## License
 
